@@ -1,0 +1,100 @@
+# Lithosphere Makalu — CometBFT Configuration Reference
+#
+# This is a reference config.toml for validators joining the Lithosphere Makalu network.
+# Copy the values relevant to your deployment into your node's config.toml at:
+#   /var/lib/litho/config/config.toml
+#
+# Full documentation: https://docs.cometbft.com/v0.38/core/configuration
+
+# =========================================================================
+# Base Configuration
+# =========================================================================
+
+# A human-readable name for this node
+moniker = "your-moniker-here"
+
+# =========================================================================
+# RPC Server Configuration
+# =========================================================================
+[rpc]
+
+# TCP or UNIX socket address for the RPC server to listen on
+laddr = "tcp://127.0.0.1:26657"
+
+# Maximum number of simultaneous connections
+max_open_connections = 900
+
+# =========================================================================
+# P2P Configuration
+# =========================================================================
+[p2p]
+
+# TCP address for the P2P server to listen on
+laddr = "tcp://0.0.0.0:26656"
+
+# Seed nodes for initial peer discovery
+seeds = "226e832ce82edd937a23285627003e95f89b9ce9@54.163.248.63:26656"
+
+# Comma-separated list of persistent peers
+persistent_peers = ""
+
+# Set true to enable the peer-exchange reactor (disable for validators)
+pex = true
+
+# Seed mode — enable only if running a dedicated seed node
+seed_mode = false
+
+# Maximum number of inbound/outbound peers
+max_num_inbound_peers = 40
+max_num_outbound_peers = 10
+
+# Toggle to disable guard against peers connecting from the same IP
+allow_duplicate_ip = false
+
+# Do not enforce strict address routability (useful for private networks)
+addr_book_strict = false
+
+# =========================================================================
+# Mempool Configuration
+# =========================================================================
+[mempool]
+
+# Maximum number of transactions in the mempool
+size = 5000
+
+# Limit the total size of all txs in the mempool (bytes)
+max_txs_bytes = 1073741824
+
+# Maximum size of a single transaction (bytes)
+max_tx_bytes = 1048576
+
+# =========================================================================
+# Consensus Configuration
+# =========================================================================
+[consensus]
+
+timeout_propose = "3s"
+timeout_prevote = "1s"
+timeout_precommit = "1s"
+timeout_commit = "900ms"
+
+# =========================================================================
+# Instrumentation (Prometheus)
+# =========================================================================
+[instrumentation]
+
+# Enable Prometheus metrics
+prometheus = true
+
+# Address to listen for Prometheus scraping
+prometheus_listen_addr = ":26660"
+
+# =========================================================================
+# State Sync (optional — speeds up initial sync)
+# =========================================================================
+[statesync]
+
+enable = false
+# rpc_servers = ""
+# trust_height = 0
+# trust_hash = ""

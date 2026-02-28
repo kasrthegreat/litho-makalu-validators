@@ -1,0 +1,24 @@
+# Compiled binary (too large for git — build from source)
+bin/lithod
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.env
+
+# Secrets (never commit)
+*.pem
+*.key
+secrets/

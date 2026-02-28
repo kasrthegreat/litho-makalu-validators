@@ -1,0 +1,73 @@
+# Lithosphere Makalu — Application Configuration Reference
+#
+# This is a reference app.toml for validators joining the Lithosphere Makalu network.
+# Copy the values relevant to your deployment into your node's app.toml at:
+#   /var/lib/litho/config/app.toml
+#
+# Full documentation: https://docs.cosmos.network/main/learn/advanced/config
+
+# =========================================================================
+# Base Configuration
+# =========================================================================
+
+# Minimum gas prices for transactions accepted by this node
+minimum-gas-prices = "0ulitho"
+
+# =========================================================================
+# Pruning
+# =========================================================================
+
+# "default", "nothing", "everything", or "custom"
+pruning = "custom"
+pruning-keep-recent = "100"
+pruning-interval = "10"
+
+# =========================================================================
+# API Configuration (Cosmos REST / LCD)
+# =========================================================================
+[api]
+
+# Enable REST API
+enable = true
+
+# Swagger UI (disable in production)
+swagger = false
+
+# API listen address
+address = "tcp://0.0.0.0:1317"
+
+# =========================================================================
+# gRPC Configuration
+# =========================================================================
+[grpc]
+
+enable = true
+address = "0.0.0.0:9090"
+
+# =========================================================================
+# EVM JSON-RPC Configuration
+# =========================================================================
+[json-rpc]
+
+# Enable EVM JSON-RPC
+enable = true
+
+# HTTP endpoint
+address = "0.0.0.0:8545"
+
+# WebSocket endpoint
+ws-address = "0.0.0.0:8546"
+
+# Enabled EVM APIs
+api = "eth,net,web3,txpool"
+
+# =========================================================================
+# State Sync Snapshots
+# =========================================================================
+[state-sync]
+
+# Interval at which to take snapshots (0 = disabled)
+snapshot-interval = 0
+
+# Number of recent snapshots to keep
+snapshot-keep-recent = 2
