@@ -46,7 +46,7 @@
 |-------|-------|
 | SHA256 | `a8e1ed954e671b7c8c7ffa043d9de2e7655ae21058ac3aa7c2e5a03c4340ba01` |
 | Genesis Time | February 20, 2026 |
-| Total Supply | 1,050,000,000 LITHO |
+| Total Supply | 1,000,000,000 LITHO |
 | Accounts | 16 (15 allocation + 1 validator operator) |
 | Gentx Memo | *"The World's 1st Decentralized Intelligence Layer. J. King Kasr KaJ Labs"* |
 
