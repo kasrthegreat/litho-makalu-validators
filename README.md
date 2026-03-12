@@ -92,7 +92,7 @@ litho-makalu-validators/
 
 | Field | Value |
 |-------|-------|
-| Network Name | `Lithosphere` |
+| Network Name | `Lithosphere Makalu` |
 | RPC URL | `https://rpc.litho.ai` |
 | Chain ID | `777777` |
 | Currency Symbol | `LITHO` |
