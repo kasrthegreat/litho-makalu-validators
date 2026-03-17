@@ -9,7 +9,7 @@
 | Parameter | Value |
 |-----------|-------|
 | Chain ID (Cosmos) | `lithosphere_777777-1` |
-| Chain ID (EVM) | `777777` |
+| Chain ID (EVM) | `700777` |
 | Block Time | ~1s (900ms timeout_commit) |
 | Max Block Size | 21 MB |
 | Max Gas/Block | 100,000,000 |
@@ -261,7 +261,7 @@ lithod tx staking create-validator \
 |-------|-------|
 | Network Name | `Lithosphere` |
 | RPC URL | `http://litho-mainnet-rpc-nlb-90cbce98dabd2453.elb.us-east-1.amazonaws.com:8545` |
-| Chain ID | `777777` |
+| Chain ID | `700777` |
 | Currency Symbol | `LITHO` |
 | Block Explorer | `https://makalu.litho.ai` |
 
