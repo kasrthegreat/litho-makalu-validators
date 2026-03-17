@@ -9,7 +9,7 @@ Official resources for running a validator on the **Lithosphere Makalu** network
 | Parameter | Value |
 |-----------|-------|
 | **Chain ID (Cosmos)** | `lithosphere_777777-1` |
-| **Chain ID (EVM)** | `777777` |
+| **Chain ID (EVM)** | `700777` |
 | **Block Time** | ~1s (900ms timeout_commit) |
 | **Max Block Size** | 21 MB |
 | **Max Gas/Block** | 100,000,000 |
@@ -94,7 +94,7 @@ litho-makalu-validators/
 |-------|-------|
 | Network Name | `Lithosphere Makalu` |
 | RPC URL | `https://rpc.litho.ai` |
-| Chain ID | `777777` |
+| Chain ID | `700777` |
 | Currency Symbol | `LITHO` |
 | Block Explorer | `https://makalu.litho.ai` |
 
