@@ -36,7 +36,7 @@ All upstream Evmos functionality is preserved — EVM, IBC, staking, governance,
 | Field | Value |
 |-------|-------|
 | Chain ID | `lithosphere_777777-1` |
-| EVM Chain ID | `777777` (encoded in Cosmos chain_id) |
+| EVM Chain ID | `700777` (encoded in Cosmos chain_id) |
 | Genesis Time | February 20, 2026 |
 | Total Supply | 1,000,000,000 LITHO |
 | Accounts | 16 (15 allocation + 1 validator operator) |
