@@ -5,7 +5,7 @@
 | Parameter | Value |
 |-----------|-------|
 | Cosmos Chain ID | `lithosphere_777777-1` |
-| EVM Chain ID | `777777` |
+| EVM Chain ID | `700777` |
 | Bech32 Prefix | `litho` |
 | Base Denom | `ulitho` |
 | Display Denom | `LITHO` |
